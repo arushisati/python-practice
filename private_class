@@ -1,0 +1,19 @@
+# Private Variable Example
+
+class Student:
+    def __init__(self, name, marks):
+        self.name = name
+        self.__marks = marks   # Private variable
+
+    def display(self):
+        print("Name:", self.name)
+        print("Marks:", self.__marks)
+
+# Creating object
+s1 = Student("Arushi", 95)
+
+# Accessing through method
+s1.display()
+
+# This will give an error
+# print(s1.__marks)
