@@ -1,0 +1,6 @@
+import numpy as np
+
+arr = np.array(["Apple", "Banana", "Mango"])
+
+for fruit in arr:
+    print(fruit)
